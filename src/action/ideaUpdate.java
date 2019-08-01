@@ -26,9 +26,9 @@ public class ideaUpdate extends HttpServlet {
             } catch(SQLException e) { }
             catch(ClassNotFoundException e) { }
     	} else {
-			request.setAttribute("error","Permission denied");
-			RequestDispatcher rd = request.getRequestDispatcher("display.jsp");
-			rd.forward(request, response);
+		request.setAttribute("error","Permission denied");
+		RequestDispatcher rd = request.getRequestDispatcher("display.jsp");
+		rd.forward(request, response);
     	}
     }
     
